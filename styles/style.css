@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  background-color:black;
+}
+
+.left-side, .right-side {
+  height: 100%;
+  width: 30%;
+}
+
+.center-side{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.gameBox {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: start;
+  height: 60%;
+  background-image: url(https://www.publicdomainpictures.net/pictures/240000/nahled/pareja-con-luna.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.btn-start-box {
+  width: 100%;
+}
+
+.btn-start {
+  display: block;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 0 5px 2px red;
+  color: red;
+  margin: auto;
+  font-weight: bold;
+}
+.btn-start:hover {
+  cursor: pointer;
+}
+
+.btn-start:focus, .btn-heart:focus {
+outline: 0!important;
+outline-color: transparent!important;
+outline-width: 0!important;
+outline-style: none!important;
+/* box-shadow: 0 0 0 0 rgba(0,123,255,0)!important; */
+}
+
+.btn-list-heart {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 10%;
+}
+
+.btn-heart {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 0 5px 2px red;
+  color: red;
+  background-image: url(https://pngimg.com/uploads/heart/heart_PNG681.png);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.first-person, .second-person {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 40%;
+  top: 20%;
+  left: -30%;
+  z-index: 10;
+  background-image: url();
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.second-person {
+  left: 100%;
+}
+
+.zodiac {
+  height: 25%;
+  width: 100%;
+}
+
+.zodiac__sign {
+  height: 3rem;
+  width: 3rem;
+  margin: auto;
+  background-color: red;
+  background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 3px red;
+}
+
+
+.person-img-wrap {
+  width: 70%;
+  margin: auto;
+}
+
+.person-img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+
+.result {
+  width: 100%;
+  height: 15%;
+}
+
+.result p {
+  color:black;
+  font-size: 2rem;
+  text-shadow: 0px 0px 10px red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrap-left, .wrap-right{
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  top: 0;
+  background-color: black;
+  z-index: 100;
+}
+
+.wrap-left {
+  left: 0;
+}
+.wrap-right {
+  right: 0;
+}
+
+.animation-left{
+  transition:all 0.5s ease-out;
+  transform: translateX(140%);
+}
+
+.animation-right {
+  transition:all 0.5s ease-out;
+  transform: translateX(-140%);
+}
+
+.animation-back {
+  transition:all 0.5s ease-out;
+  transform: translateX(0);
+}
+
+.hide {
+  visibility: hidden;
+}
+
